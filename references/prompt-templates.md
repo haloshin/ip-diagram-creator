@@ -91,13 +91,22 @@ Sheet layout:
 1. Top anchor strip: one medium bust labeled "统一锚点".
 2. "小比例图解角色": 6-10 small full-body scene poses. Every pose must preserve identity anchors.
 3. "常用动作": 4-8 medium action samples.
-4. "表情参考": 4-6 bust expressions.
+4. "主角 + Agent 协作": 4-6 small scenes where the creator assigns, reviews, corrects, or receives work from execution Agents.
+5. "表情参考": 4-6 bust expressions.
 
 Domain-specific override:
 If the creator has a clear course, industry, or recurring content series, replace the generic pose list with scenes from that domain. The action sheet should feel made for this creator's real content, not a universal action library.
 
+Creator + Agent collaboration samples:
+- 给执行 Agent 分配任务
+- 执行 Agent 递回结果
+- 执行 Agent 搬运知识卡
+- 执行 Agent 把失败方案打叉
+- 主角在白板前调度多个 Agents
+- 主角批注 Agent 产出的草稿
+
 Chinese labels:
-Use short, readable handwritten Chinese labels only.
+Use short, readable handwritten Chinese labels only. Use "Agents" or "执行 Agent" if labels are needed. Do not write internal nicknames.
 
 Avoid:
 No inconsistent clothing colors. No missing required glasses/accessories. No childlike proportions. No business suit. No commercial poster. No PPT infographic. No realistic portrait. No dense layout.
@@ -145,7 +154,7 @@ Creator persona action:
 {角色动作。角色必须参与核心动作，不要站在旁边装饰。}
 
 Supporting roles:
-{Agents / 执行 Agent / 用户 / 失败案例 / 反馈来源 / 风险提示等。}
+{Agents / 执行 Agent / 用户 / 失败案例 / 反馈来源 / 风险提示等。For knowledge cards about steps, workflows, methods, comparisons, cases, risks, or action checklists, include 2-6 execution Agents by default. Assign each Agent a concrete job such as carrying cards, testing a step, raising feedback, marking a failed case, handing back a result, or flagging a risk. Do not write internal nicknames on the image.}
 
 Suggested elements:
 {建议元素}
@@ -155,13 +164,13 @@ Information level:
 
 Mode-specific composition:
 - If visual mode is hand-drawn illustration mode: keep it spacious like an article illustration. Use one dominant metaphor or action. Even at higher information level, do not fill the full canvas like an infographic. If the creator persona is small in a big scene, preserve identity through hair silhouette, glasses/accessory, outfit, and body language.
-- If visual mode is knowledge card mode: organize the image as a complete readable content card. Choose or invent a card form that fits the information structure and aspect ratio. The confirmed creator persona should act as the main explainer, guide, or annotator. Supporting Agents may appear as users, executors, failed cases, feedback sources, or risk markers.
+- If visual mode is knowledge card mode: organize the image as a complete readable content card. Choose or invent a card form that fits the information structure and aspect ratio. The confirmed creator persona should act as the main explainer, guide, annotator, or dispatcher. Supporting Agents are default visual grammar for methods, steps, workflows, comparisons, cases, risks, and action checklists: use 2-6 Agents to execute, carry, test, fail, report, or flag parts of the content. Only omit them for pure quote cards, very minimal covers, or when the user explicitly asks for no Agents.
 
 Color use:
 Black for main line art and text. Orange for main flow/path/arrows. Red only for key warnings/problems/results. Blue only for secondary notes or feedback/system state.
 
 Constraints:
-One image explains the selected core idea. Keep text readable. Do not write unnecessary long paragraphs. Do not write the structure type on the image. Do not make it a formal PPT, course slide, commercial poster, or dense corporate infographic unless the selected use case is a phone poster and the user confirmed it. Do not copy prior examples or reuse known case compositions. Invent a fresh, strange-but-clear visual metaphor for this specific content. The creator persona must be recognizable and stable.
+One image explains the selected core idea. Keep text readable. Do not write unnecessary long paragraphs. Do not write the structure type on the image. If the image is a method / step / workflow / comparison / risk / action checklist knowledge card and there are no execution Agents or action metaphors, the result is incomplete and should be revised. Do not make it a formal PPT, course slide, commercial poster, or dense corporate infographic unless the selected use case is a phone poster and the user confirmed it. Do not copy prior examples or reuse known case compositions. Invent a fresh, strange-but-clear visual metaphor for this specific content. The creator persona must be recognizable and stable.
 ```
 
 ## 返修 prompt 模板
