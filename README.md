@@ -16,8 +16,16 @@
 
 ### 1. 安装
 
+当前项目安装：
+
 ```bash
 npx skills add https://github.com/haloshin/ip-diagram-creator
+```
+
+全局安装：
+
+```bash
+npx skills add https://github.com/haloshin/ip-diagram-creator -g
 ```
 
 不使用安装器也可以：下载本仓库，把整个目录放进你的 Agent Skills 目录，然后让 Agent 读取 `SKILL.md`。
