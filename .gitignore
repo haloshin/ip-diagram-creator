@@ -1,0 +1,12 @@
+.DS_Store
+*.zip
+*.log
+*.tmp
+outputs/
+workspace/
+node_modules/
+__pycache__/
+.venv/
+.env
+.env.*
+!.env.example
