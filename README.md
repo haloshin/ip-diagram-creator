@@ -23,13 +23,19 @@ npx skills add https://github.com/haloshin/ip-diagram-creator
 第一次使用时，上传你的照片、主页截图或简介，然后说一句就够：
 
 ```text
-再帮我出一组图
+帮我出一组图。
 ```
 
-或者更明确一点：
+也可以说：
 
 ```text
-用 ip-diagram-creator 帮我做一组个人 IP 图解角色
+帮我出一组 IP 图。
+```
+
+或者：
+
+```text
+帮我出一套 IP 图。
 ```
 
 确认三张角色资产后，直接把内容发给它：
