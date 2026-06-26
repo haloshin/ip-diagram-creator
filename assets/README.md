@@ -23,6 +23,12 @@ examples/
     article-illustration-low-density.png
     knowledge-card-high-density.webp
     knowledge-card-high-density.png
+  ppt-mode/
+    ppt-mode-gallery-8up.webp
+    ppt-mode-gallery-8up.png
+    ppt-mode-01-cover.webp
+    ppt-mode-01-cover.png
+    ...
   illustration-density/
     low-density.png
     mid-density.png
@@ -49,6 +55,7 @@ templates/
 - `what-you-get-diagram-modes.webp` 是 README 的图解产出示例图，`what-you-get-diagram-modes.png` 是同图源文件。
 - `examples/gallery/` 放 README 可直接展示的最终成品图。
 - gallery 里的 WebP 用于 README 展示，PNG 作为同图源文件保留。
+- `examples/ppt-mode/` 放 PPT 演讲模式的公开样例图，包括 16:9 单页样例和 4 列 x 2 行 gallery。
 - 低 / 中 / 高信息量参考图只服务手绘插图模式。
 - 知识卡参考图按信息结构分类，不按信息量分类。
 - 三张角色资产的示例版式可以放在 `templates/character-assets/`。

@@ -173,6 +173,49 @@ Constraints:
 One image explains the selected core idea. Keep text readable. Do not write unnecessary long paragraphs. Do not write the structure type on the image. If the image is a method / step / workflow / comparison / risk / action checklist knowledge card and there are no execution Agents or action metaphors, the result is incomplete and should be revised. Do not make it a formal PPT, course slide, commercial poster, or dense corporate infographic unless the selected use case is a phone poster and the user confirmed it. Do not copy prior examples or reuse known case compositions. Invent a fresh, strange-but-clear visual metaphor for this specific content. The creator persona must be recognizable and stable.
 ```
 
+## PPT 演讲页面 prompt
+
+```text
+Generate one standalone 16:9 Chinese PPT presentation page using the confirmed creator persona.
+
+This is PPT presentation mode, not a knowledge card and not an article illustration. The page must look like a real presentation slide while keeping a minimalist hand-drawn whiteboard style.
+
+Character reference assets for this generation:
+- Primary reference: {角色主锚图}
+- Additional reference if needed: {动作/表情/小比例场景扩展图}
+- Correction reference only if needed: {角色规范说明图}
+
+Confirmed creator persona:
+{角色档案摘要：发型、眼镜/配饰、服装、体态、气质、道具、点缀色}
+
+Page card:
+- Page number: {页码}
+- Page type: {封面页 / 大判断页 / 模块页 / 标准页 / 场景页 / 时间线页 / 方法页 / 收束页 / 其他}
+- Visual weight: {anchor / dense / breathing}
+- Communication task: {沟通任务}
+- Core idea: {核心观点}
+- Page title: {图内标题}
+- Required text: {图内文字}
+- Text-to-image ratio: {图文比例}
+- Main visual: {主视觉}
+- Creator persona role: {IP 角色职责}
+- Supporting Agents / people role: {辅助 Agent / 人物职责}
+- Density: {页面密度}
+- Continuity: {前后页衔接}
+
+Visual DNA:
+White or near-white background. Minimalist hand-drawn business whiteboard style. Stable PPT layout discipline. Clear hierarchy. Black and dark gray line art. Orange only for key emphasis, paths, buttons, or underlines. Blue only for structural links when needed. No gradients, no glossy corporate template, no tech neon style, no commercial poster feeling.
+
+Typography:
+Main title must be stable, bold, businesslike, and clear. Body text and labels should feel consistent. Handwritten text is allowed only as small annotations, not as the main information. Keep Chinese text readable.
+
+Composition:
+Make it a complete PPT page. Use grid, alignment, clear whitespace, and one communication task. Do not make it a dense infographic poster or a classroom handout. The creator persona must have a real page duty, such as presenting, pointing, observing, operating, or closing the talk. Do not place the persona as decoration.
+
+Constraints:
+No fake words, no unreadable small text, no random English unless explicitly requested. Do not overuse orange. Do not make every page high-density. Do not let the creator persona drift in age, clothes, hair, glasses/accessories, or vibe.
+```
+
 ## 返修 prompt 模板
 
 ```text

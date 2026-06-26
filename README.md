@@ -2,7 +2,7 @@
 
 **个人 IP 图解创作器：用你的 IP 形象，生成专属内容图解。**
 
-把授权照片、主页截图、简介或已有角色档案，转成一套可长期复用的极简手绘图解角色；再把文章、课程、观点或脚本拆成适合传播的长文配图、知识卡、方法拆解图或手机海报。
+把授权照片、主页截图、简介或已有角色档案，转成一套可长期复用的极简手绘图解角色；再把文章、课程、观点或脚本拆成适合传播的长文配图、知识卡、方法拆解图、手机海报或整页 PPT 演讲页面。
 
 它不是单纯的头像生成器，而是 **IP 主角 + 执行 Agent 的知识图解系统**：用户 IP 负责主讲、拆解、批注和调度，执行 Agent 负责搬卡片、递交结果、标记风险、反馈和试错。
 
@@ -60,6 +60,7 @@ npx skills add https://github.com/haloshin/ip-diagram-creator -g
 | 知识卡 | 方法、步骤、流程、对比、案例 | 用这个形象做一张 16:9 知识卡。 |
 | 手绘插图 | 单个观点、故事场景、隐喻表达 | 用这个形象做一张手绘插图。 |
 | 长文 shot list | 文章、课程、脚本 | 这篇文章想配图，请先判断适合几张图，给 shot list，不要直接全生成。 |
+| PPT 演讲模式 | 直播分享、课程课件、主题演讲 | 我有一个分享大纲，请先做整套 PPT 导演规划卡，不要直接出图。 |
 
 ---
 
@@ -85,16 +86,33 @@ npx skills add https://github.com/haloshin/ip-diagram-creator -g
 
 这张图展示同一个内容主题在不同信息密度下的产出差异：低信息量手绘插图、中信息量插图、高信息量标注图，以及更适合收藏和复盘的知识卡。
 
-核心产出分成 6 类：
+核心产出分成 7 类：
 
 | 产出 | 作用 |
 | --- | --- |
 | 角色三件套 | 角色主锚图、角色规范说明图、动作 / 表情 / 小比例场景扩展图。 |
 | 内容图解 | 先读长文、课程、截图或一句话主题，再判断适合画哪几张图。 |
 | Agent 协作图解 | 方法、步骤、流程、对比、案例和风险类知识卡，默认安排 2-6 个执行 Agent 参与动作。 |
-| 模式判断 | 手绘插图看信息量，知识卡看内容结构和执行分工。 |
+| 模式判断 | 手绘插图看信息量，知识卡看内容结构和执行分工，PPT 模式看页面节奏。 |
 | 出图前确认卡 | 先确认图类型、尺寸、图内文字、主画面隐喻、角色动作和辅助 Agent 分工。 |
+| PPT 导演规划 | 先规划整套页面类型、信息密度、人物出现频率和样张页，再分批生成。 |
 | Prompt 和返修建议 | 可复制到图像生成工具，也方便持续迭代角色稳定性。 |
+
+### PPT 模式：从单张图解到整套演讲页面
+
+![PPT 模式样例图](assets/examples/ppt-mode/ppt-mode-gallery-8up.webp)
+
+PPT 演讲模式用于个人 IP 直播分享、课程课件、主题演讲和案例复盘。它不是把每一页都做成知识卡，而是先控制整套页面节奏，再生成整页 PPT 页面图。
+
+基本流程：
+
+1. 提供主题、大纲、逐字稿或旧 PPT。
+2. 确认个人 IP 角色资产。
+3. 输出导演规划卡：每页类型、视觉权重、图文比例、人物职责和 QA 风险。
+4. 先做 1-2 页样张，确认字体、角色和信息密度。
+5. 分批生成整套页面，并用 contact sheet 做整套 QA。
+
+常见页面类型包括：封面页、大判断页、模块页、标准页、场景页、时间线页、方法页和收束页。
 
 ## 适合谁
 
@@ -128,6 +146,7 @@ npx skills add https://github.com/haloshin/ip-diagram-creator -g
 | --- | --- |
 | 角色建档 | 角色信息提取卡、三张角色固定资产 prompt、角色档案摘要。 |
 | 内容拆解 | 长文 shot list、出图方案推荐、内容确认卡、辅助 Agent 分工建议。 |
+| PPT 演讲模式 | 整套导演规划卡、page card、样张页建议、整套 QA 检查。 |
 | 生成与返修 | 可复制的图像生成 prompt、QA 检查、返修 prompt。 |
 
 ---
@@ -137,7 +156,7 @@ npx skills add https://github.com/haloshin/ip-diagram-creator -g
 示例图只展示最终成品，不包含原始照片、主页截图或私有参考图。
 
 <details>
-<summary>展开查看 4 类示例图</summary>
+<summary>展开查看 5 类示例图</summary>
 
 <table>
   <tr>
@@ -170,9 +189,22 @@ npx skills add https://github.com/haloshin/ip-diagram-creator -g
   </tr>
 </table>
 
+<br />
+
+<table>
+  <tr>
+    <td width="100%">
+      <img src="assets/examples/ppt-mode/ppt-mode-gallery-8up.webp" alt="ppt mode gallery" />
+      <br />
+      <strong>PPT 演讲模式</strong><br />
+      从封面、大判断、模块、标准、场景、时间线、方法到收束页，展示整套页面节奏。
+    </td>
+  </tr>
+</table>
+
 </details>
 
-PNG 源图和 WebP 展示图都保留在 `assets/examples/gallery/`，便于后续替换、裁切或重新压缩。
+PNG 源图和 WebP 展示图都保留在 `assets/examples/gallery/` 和 `assets/examples/ppt-mode/`，便于后续替换、裁切或重新压缩。
 
 ---
 
@@ -206,6 +238,7 @@ ip-diagram-creator/
 
 - `references/visual-language.md`：调整手绘风格、颜色、禁区和角色规则。
 - `references/modes-and-sizes.md`：增加平台尺寸、内容类型和知识卡形态。
+- `references/ppt-presentation-mode.md`：调整 PPT 页面类型、导演规划、样张和 QA 规则。
 - `references/prompt-templates.md`：替换 prompt 语言或适配你的图像生成模型。
 - `assets/README.md`：规划你自己的通用参考图和版式示例。
 - `evals/evals.json`：增加你的真实使用场景测试。
