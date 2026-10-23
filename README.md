@@ -1,5 +1,7 @@
 # ip-diagram-creator
 
+[![AgentShield Security](https://merx.help/badge/A+.svg)](https://merx.help/shield)
+
 **个人 IP 图解创作器：用你的 IP 形象，生成专属内容图解。**
 
 把授权照片、主页截图、简介或已有角色档案，转成一套可长期复用的极简手绘图解角色；再把文章、课程、观点或脚本拆成适合传播的长文配图、知识卡、方法拆解图、手机海报或整页 PPT 演讲页面。
